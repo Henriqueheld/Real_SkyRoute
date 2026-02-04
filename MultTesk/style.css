@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #333;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(135, 128, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(233, 231, 231);
+    font-size: clamp(1rem, 2vw, 24px);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+}
+
+
+/* Seção 1 */
+
+#s1 {
+    max-width: 1200px;
+    width: 100%;
+    min-width: none;
+    min-height: 100vh;
+    background-color: rgba(240, 240, 240, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.s1title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 8vw, 80px);
+    background-color: rgb(186, 186, 189);
+    color: white;
+}
+
+.s1info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color:rgba(135, 128, 161, 0.63);
+    border: solid rgba(135, 128, 161, 0.753) 2px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 300px;
+    font-size: clamp(1rem, 3vw, 35px);
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Seção 2 */
+
+#s2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color:  rgba(240, 240, 240, 0.801);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s2title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 5vw, 60px);
+    background-color: rgb(186, 186, 189);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.dronesBox {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(240, 240, 240, 0.801);
+}
+
+
+.drone{
+    flex: 1 1 300px;
+    max-width: 400px;
+    height: auto;
+    min-height: 400px;
+    background-color: rgba(135, 128, 161, 0.63);
+    border-radius: 10px;
+
+}
+
+.droneElement {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(200, 200, 200, 0.63);
+    border-radius: 10px;
+}
+
+.drone:hover {
+    background-color: rgba(135, 128, 161, 0.853);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.drone img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    margin-top: 20px;
+}
+
+.drone button {
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: clamp(1rem, 2vw, 20px);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(135, 128, 161);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(100, 92, 124);
+}
+
+/* Seção 3 */
+
+#s3 {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color:  rgba(240, 240, 240, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3painel {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 600px;
+    background-color: rgba(135, 128, 161, 0.63);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.s3painel img {
+    width: 40%;
+    height: 200px;
+    max-height: 500px;
+}
+
+.droneCalc {
+    width: 50%;
+    height: auto;
+    min-height: 400px;
+    background-color: rgba(240, 240, 240, 0.801);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.droneCalc input {
+    width: 80%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: clamp(1rem, 2vw, 20px);
+    border: solid rgba(135, 128, 161, 0.753) 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.droneCalc button {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: clamp(1rem, 2vw, 20px);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(135, 128, 161);
+    color: white;
+    cursor: pointer;
+}
+
+/* Seção 4 */
+
+#s4 {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: rgba(240, 240, 240, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+
+.MsgPainel {
+    width: 600px;
+    max-width: 1000px;
+    height: auto;
+    min-height: 400px;
+    background-color: rgba(135, 128, 161, 0.63);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.MsgPainel input, .MsgPainel textarea {
+    width: 80%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: clamp(1rem, 2vw, 20px);
+    border: solid rgba(135, 128, 161, 0.753) 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.MsgPainel button {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: clamp(1rem, 2vw, 20px);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(135, 128, 161);
+    color: white;
+    cursor: pointer;
+}
